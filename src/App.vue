@@ -1,15 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Products/>
+  <Types v-bind:func="getAllProducts"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Products from './components/Products.vue'
+import Types from './components/Types.vue'
+
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    Products,
+    Types
+  },
+  methods:{
+
   }
 }
 </script>
